@@ -2,6 +2,8 @@
 
 A card-game **engine**, not just one game. You design the cards (their labels, images, abilities and how many of each), choose the number of players and the house rules, and the engine runs the game. Classic Uno is a preset built with the same building blocks as any game you make.
 
+> A Java 21 edition of the same engine lives at [uno-game-engine-java](https://github.com/mustafakhafajah/uno-game-engine-java). Both read and write the same JSON game files.
+
 ```
 dotnet run --project src/UnoEngine.ConsoleApp    # play against bots or friends, or design your own cards
 dotnet test                                       # 50 tests: rules, managers, effects, full bot games, replay
