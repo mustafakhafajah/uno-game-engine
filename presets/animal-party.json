@@ -1,0 +1,51 @@
+{
+  "name": "Animal Party",
+  "description": "A custom game made with the engine: match the animal or its habitat; foxes swap hands, eagles fly again, floods hit everyone.",
+  "players": { "min": 3, "max": 6 },
+  "handSize": 5,
+  "attributes": ["animal", "habitat"],
+  "matchRule": { "anyOf": ["animal", "habitat"] },
+  "settings": {
+    "scoring": "targetScore",
+    "targetScore": 100,
+    "firstCard": "drawAnother"
+  },
+  "cards": [
+    { "id": "cat-city",    "label": "Cat",  "image": "images/cat-city.png",    "attributes": { "animal": "cat",  "habitat": "city" },   "copies": 3, "points": 1 },
+    { "id": "dog-city",    "label": "Dog",  "image": "images/dog-city.png",    "attributes": { "animal": "dog",  "habitat": "city" },   "copies": 3, "points": 1 },
+    { "id": "owl-forest",  "label": "Owl",  "image": "images/owl-forest.png",  "attributes": { "animal": "owl",  "habitat": "forest" }, "copies": 3, "points": 1 },
+    { "id": "frog-river",  "label": "Frog", "image": "images/frog-river.png",  "attributes": { "animal": "frog", "habitat": "river" },  "copies": 3, "points": 1 },
+    { "id": "cat-forest",  "label": "Cat",  "image": "images/cat-forest.png",  "attributes": { "animal": "cat",  "habitat": "forest" }, "copies": 2, "points": 2 },
+    { "id": "dog-river",   "label": "Dog",  "image": "images/dog-river.png",   "attributes": { "animal": "dog",  "habitat": "river" },  "copies": 2, "points": 2 },
+    { "id": "owl-city",    "label": "Owl",  "image": "images/owl-city.png",    "attributes": { "animal": "owl",  "habitat": "city" },   "copies": 2, "points": 2 },
+    { "id": "frog-forest", "label": "Frog", "image": "images/frog-forest.png", "attributes": { "animal": "frog", "habitat": "forest" }, "copies": 2, "points": 2 },
+
+    { "id": "sly-fox", "label": "Sly Fox", "image": "images/sly-fox.png",
+      "attributes": { "animal": "fox", "habitat": "forest" }, "copies": 2, "points": 10,
+      "abilities": [ { "type": "swapHands", "target": "chosen" } ] },
+
+    { "id": "eagle", "label": "Eagle", "image": "images/eagle.png",
+      "attributes": { "animal": "eagle", "habitat": "city" }, "copies": 2, "points": 10,
+      "abilities": [ { "type": "playAgain" } ] },
+
+    { "id": "bear", "label": "Bear", "image": "images/bear.png",
+      "attributes": { "animal": "bear", "habitat": "forest" }, "copies": 2, "points": 10,
+      "abilities": [ { "type": "skip", "count": 2 } ] },
+
+    { "id": "flood", "label": "Flood", "image": "images/flood.png",
+      "attributes": { "habitat": "river" }, "copies": 2, "points": 15,
+      "abilities": [ { "type": "draw", "target": "all", "count": 1 } ] },
+
+    { "id": "cat-feast", "label": "Cat Feast", "image": "images/cat-feast.png",
+      "attributes": { "animal": "cat", "habitat": "city" }, "copies": 1, "points": 15,
+      "abilities": [ { "type": "discardAll", "attribute": "animal" } ] },
+
+    { "id": "migration", "label": "Migration", "image": "images/migration.png",
+      "attributes": {}, "copies": 2, "wild": true, "points": 20,
+      "abilities": [ { "type": "chooseAttribute", "attribute": "habitat" } ] },
+
+    { "id": "stampede", "label": "Stampede", "image": "images/stampede.png",
+      "attributes": {}, "copies": 1, "wild": true, "points": 25,
+      "abilities": [ { "type": "rotateHands", "direction": "forward" } ] }
+  ]
+}

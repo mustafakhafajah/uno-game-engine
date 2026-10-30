@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/UnoEngine.ConsoleApp/UnoEngine.ConsoleApp.csproj" />
+    <Project Path="src/UnoEngine.Core/UnoEngine.Core.csproj" />
+    <Project Path="src/UnoEngine.Engine/UnoEngine.Engine.csproj" />
+    <Project Path="src/UnoEngine.Rules/UnoEngine.Rules.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/UnoEngine.Tests/UnoEngine.Tests.csproj" />
+  </Folder>
+</Solution>

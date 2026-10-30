@@ -1,0 +1,715 @@
+{
+  "name": "Classic Uno",
+  "description": "The official 108-card Uno deck.",
+  "players": {
+    "min": 2,
+    "max": 10
+  },
+  "handSize": 7,
+  "attributes": [
+    "color",
+    "symbol"
+  ],
+  "matchRule": {
+    "anyOf": [
+      "color",
+      "symbol"
+    ]
+  },
+  "settings": {
+    "scoring": "firstOutWins",
+    "targetScore": 500,
+    "stackDrawCards": false,
+    "playDrawnCard": true,
+    "drawStyle": "oneCard",
+    "firstCard": "applyAbilities",
+    "unoPenalty": 2,
+    "twoPlayerReverseActsAsSkip": true
+  },
+  "cards": [
+    {
+      "id": "red-0",
+      "label": "0",
+      "image": "cards/red-0.png",
+      "attributes": {
+        "color": "red",
+        "symbol": "0"
+      },
+      "copies": 1
+    },
+    {
+      "id": "red-1",
+      "label": "1",
+      "image": "cards/red-1.png",
+      "attributes": {
+        "color": "red",
+        "symbol": "1"
+      },
+      "copies": 2,
+      "points": 1
+    },
+    {
+      "id": "red-2",
+      "label": "2",
+      "image": "cards/red-2.png",
+      "attributes": {
+        "color": "red",
+        "symbol": "2"
+      },
+      "copies": 2,
+      "points": 2
+    },
+    {
+      "id": "red-3",
+      "label": "3",
+      "image": "cards/red-3.png",
+      "attributes": {
+        "color": "red",
+        "symbol": "3"
+      },
+      "copies": 2,
+      "points": 3
+    },
+    {
+      "id": "red-4",
+      "label": "4",
+      "image": "cards/red-4.png",
+      "attributes": {
+        "color": "red",
+        "symbol": "4"
+      },
+      "copies": 2,
+      "points": 4
+    },
+    {
+      "id": "red-5",
+      "label": "5",
+      "image": "cards/red-5.png",
+      "attributes": {
+        "color": "red",
+        "symbol": "5"
+      },
+      "copies": 2,
+      "points": 5
+    },
+    {
+      "id": "red-6",
+      "label": "6",
+      "image": "cards/red-6.png",
+      "attributes": {
+        "color": "red",
+        "symbol": "6"
+      },
+      "copies": 2,
+      "points": 6
+    },
+    {
+      "id": "red-7",
+      "label": "7",
+      "image": "cards/red-7.png",
+      "attributes": {
+        "color": "red",
+        "symbol": "7"
+      },
+      "copies": 2,
+      "points": 7
+    },
+    {
+      "id": "red-8",
+      "label": "8",
+      "image": "cards/red-8.png",
+      "attributes": {
+        "color": "red",
+        "symbol": "8"
+      },
+      "copies": 2,
+      "points": 8
+    },
+    {
+      "id": "red-9",
+      "label": "9",
+      "image": "cards/red-9.png",
+      "attributes": {
+        "color": "red",
+        "symbol": "9"
+      },
+      "copies": 2,
+      "points": 9
+    },
+    {
+      "id": "red-skip",
+      "label": "Skip",
+      "image": "cards/red-skip.png",
+      "attributes": {
+        "color": "red",
+        "symbol": "skip"
+      },
+      "copies": 2,
+      "points": 20,
+      "abilities": [
+        {
+          "type": "skip",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "red-reverse",
+      "label": "Reverse",
+      "image": "cards/red-reverse.png",
+      "attributes": {
+        "color": "red",
+        "symbol": "reverse"
+      },
+      "copies": 2,
+      "points": 20,
+      "abilities": [
+        {
+          "type": "reverse"
+        }
+      ]
+    },
+    {
+      "id": "red-draw2",
+      "label": "+2",
+      "image": "cards/red-draw2.png",
+      "attributes": {
+        "color": "red",
+        "symbol": "+2"
+      },
+      "copies": 2,
+      "points": 20,
+      "abilities": [
+        {
+          "type": "draw",
+          "target": "next",
+          "count": 2,
+          "losesTurn": true
+        }
+      ]
+    },
+    {
+      "id": "yellow-0",
+      "label": "0",
+      "image": "cards/yellow-0.png",
+      "attributes": {
+        "color": "yellow",
+        "symbol": "0"
+      },
+      "copies": 1
+    },
+    {
+      "id": "yellow-1",
+      "label": "1",
+      "image": "cards/yellow-1.png",
+      "attributes": {
+        "color": "yellow",
+        "symbol": "1"
+      },
+      "copies": 2,
+      "points": 1
+    },
+    {
+      "id": "yellow-2",
+      "label": "2",
+      "image": "cards/yellow-2.png",
+      "attributes": {
+        "color": "yellow",
+        "symbol": "2"
+      },
+      "copies": 2,
+      "points": 2
+    },
+    {
+      "id": "yellow-3",
+      "label": "3",
+      "image": "cards/yellow-3.png",
+      "attributes": {
+        "color": "yellow",
+        "symbol": "3"
+      },
+      "copies": 2,
+      "points": 3
+    },
+    {
+      "id": "yellow-4",
+      "label": "4",
+      "image": "cards/yellow-4.png",
+      "attributes": {
+        "color": "yellow",
+        "symbol": "4"
+      },
+      "copies": 2,
+      "points": 4
+    },
+    {
+      "id": "yellow-5",
+      "label": "5",
+      "image": "cards/yellow-5.png",
+      "attributes": {
+        "color": "yellow",
+        "symbol": "5"
+      },
+      "copies": 2,
+      "points": 5
+    },
+    {
+      "id": "yellow-6",
+      "label": "6",
+      "image": "cards/yellow-6.png",
+      "attributes": {
+        "color": "yellow",
+        "symbol": "6"
+      },
+      "copies": 2,
+      "points": 6
+    },
+    {
+      "id": "yellow-7",
+      "label": "7",
+      "image": "cards/yellow-7.png",
+      "attributes": {
+        "color": "yellow",
+        "symbol": "7"
+      },
+      "copies": 2,
+      "points": 7
+    },
+    {
+      "id": "yellow-8",
+      "label": "8",
+      "image": "cards/yellow-8.png",
+      "attributes": {
+        "color": "yellow",
+        "symbol": "8"
+      },
+      "copies": 2,
+      "points": 8
+    },
+    {
+      "id": "yellow-9",
+      "label": "9",
+      "image": "cards/yellow-9.png",
+      "attributes": {
+        "color": "yellow",
+        "symbol": "9"
+      },
+      "copies": 2,
+      "points": 9
+    },
+    {
+      "id": "yellow-skip",
+      "label": "Skip",
+      "image": "cards/yellow-skip.png",
+      "attributes": {
+        "color": "yellow",
+        "symbol": "skip"
+      },
+      "copies": 2,
+      "points": 20,
+      "abilities": [
+        {
+          "type": "skip",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "yellow-reverse",
+      "label": "Reverse",
+      "image": "cards/yellow-reverse.png",
+      "attributes": {
+        "color": "yellow",
+        "symbol": "reverse"
+      },
+      "copies": 2,
+      "points": 20,
+      "abilities": [
+        {
+          "type": "reverse"
+        }
+      ]
+    },
+    {
+      "id": "yellow-draw2",
+      "label": "+2",
+      "image": "cards/yellow-draw2.png",
+      "attributes": {
+        "color": "yellow",
+        "symbol": "+2"
+      },
+      "copies": 2,
+      "points": 20,
+      "abilities": [
+        {
+          "type": "draw",
+          "target": "next",
+          "count": 2,
+          "losesTurn": true
+        }
+      ]
+    },
+    {
+      "id": "green-0",
+      "label": "0",
+      "image": "cards/green-0.png",
+      "attributes": {
+        "color": "green",
+        "symbol": "0"
+      },
+      "copies": 1
+    },
+    {
+      "id": "green-1",
+      "label": "1",
+      "image": "cards/green-1.png",
+      "attributes": {
+        "color": "green",
+        "symbol": "1"
+      },
+      "copies": 2,
+      "points": 1
+    },
+    {
+      "id": "green-2",
+      "label": "2",
+      "image": "cards/green-2.png",
+      "attributes": {
+        "color": "green",
+        "symbol": "2"
+      },
+      "copies": 2,
+      "points": 2
+    },
+    {
+      "id": "green-3",
+      "label": "3",
+      "image": "cards/green-3.png",
+      "attributes": {
+        "color": "green",
+        "symbol": "3"
+      },
+      "copies": 2,
+      "points": 3
+    },
+    {
+      "id": "green-4",
+      "label": "4",
+      "image": "cards/green-4.png",
+      "attributes": {
+        "color": "green",
+        "symbol": "4"
+      },
+      "copies": 2,
+      "points": 4
+    },
+    {
+      "id": "green-5",
+      "label": "5",
+      "image": "cards/green-5.png",
+      "attributes": {
+        "color": "green",
+        "symbol": "5"
+      },
+      "copies": 2,
+      "points": 5
+    },
+    {
+      "id": "green-6",
+      "label": "6",
+      "image": "cards/green-6.png",
+      "attributes": {
+        "color": "green",
+        "symbol": "6"
+      },
+      "copies": 2,
+      "points": 6
+    },
+    {
+      "id": "green-7",
+      "label": "7",
+      "image": "cards/green-7.png",
+      "attributes": {
+        "color": "green",
+        "symbol": "7"
+      },
+      "copies": 2,
+      "points": 7
+    },
+    {
+      "id": "green-8",
+      "label": "8",
+      "image": "cards/green-8.png",
+      "attributes": {
+        "color": "green",
+        "symbol": "8"
+      },
+      "copies": 2,
+      "points": 8
+    },
+    {
+      "id": "green-9",
+      "label": "9",
+      "image": "cards/green-9.png",
+      "attributes": {
+        "color": "green",
+        "symbol": "9"
+      },
+      "copies": 2,
+      "points": 9
+    },
+    {
+      "id": "green-skip",
+      "label": "Skip",
+      "image": "cards/green-skip.png",
+      "attributes": {
+        "color": "green",
+        "symbol": "skip"
+      },
+      "copies": 2,
+      "points": 20,
+      "abilities": [
+        {
+          "type": "skip",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "green-reverse",
+      "label": "Reverse",
+      "image": "cards/green-reverse.png",
+      "attributes": {
+        "color": "green",
+        "symbol": "reverse"
+      },
+      "copies": 2,
+      "points": 20,
+      "abilities": [
+        {
+          "type": "reverse"
+        }
+      ]
+    },
+    {
+      "id": "green-draw2",
+      "label": "+2",
+      "image": "cards/green-draw2.png",
+      "attributes": {
+        "color": "green",
+        "symbol": "+2"
+      },
+      "copies": 2,
+      "points": 20,
+      "abilities": [
+        {
+          "type": "draw",
+          "target": "next",
+          "count": 2,
+          "losesTurn": true
+        }
+      ]
+    },
+    {
+      "id": "blue-0",
+      "label": "0",
+      "image": "cards/blue-0.png",
+      "attributes": {
+        "color": "blue",
+        "symbol": "0"
+      },
+      "copies": 1
+    },
+    {
+      "id": "blue-1",
+      "label": "1",
+      "image": "cards/blue-1.png",
+      "attributes": {
+        "color": "blue",
+        "symbol": "1"
+      },
+      "copies": 2,
+      "points": 1
+    },
+    {
+      "id": "blue-2",
+      "label": "2",
+      "image": "cards/blue-2.png",
+      "attributes": {
+        "color": "blue",
+        "symbol": "2"
+      },
+      "copies": 2,
+      "points": 2
+    },
+    {
+      "id": "blue-3",
+      "label": "3",
+      "image": "cards/blue-3.png",
+      "attributes": {
+        "color": "blue",
+        "symbol": "3"
+      },
+      "copies": 2,
+      "points": 3
+    },
+    {
+      "id": "blue-4",
+      "label": "4",
+      "image": "cards/blue-4.png",
+      "attributes": {
+        "color": "blue",
+        "symbol": "4"
+      },
+      "copies": 2,
+      "points": 4
+    },
+    {
+      "id": "blue-5",
+      "label": "5",
+      "image": "cards/blue-5.png",
+      "attributes": {
+        "color": "blue",
+        "symbol": "5"
+      },
+      "copies": 2,
+      "points": 5
+    },
+    {
+      "id": "blue-6",
+      "label": "6",
+      "image": "cards/blue-6.png",
+      "attributes": {
+        "color": "blue",
+        "symbol": "6"
+      },
+      "copies": 2,
+      "points": 6
+    },
+    {
+      "id": "blue-7",
+      "label": "7",
+      "image": "cards/blue-7.png",
+      "attributes": {
+        "color": "blue",
+        "symbol": "7"
+      },
+      "copies": 2,
+      "points": 7
+    },
+    {
+      "id": "blue-8",
+      "label": "8",
+      "image": "cards/blue-8.png",
+      "attributes": {
+        "color": "blue",
+        "symbol": "8"
+      },
+      "copies": 2,
+      "points": 8
+    },
+    {
+      "id": "blue-9",
+      "label": "9",
+      "image": "cards/blue-9.png",
+      "attributes": {
+        "color": "blue",
+        "symbol": "9"
+      },
+      "copies": 2,
+      "points": 9
+    },
+    {
+      "id": "blue-skip",
+      "label": "Skip",
+      "image": "cards/blue-skip.png",
+      "attributes": {
+        "color": "blue",
+        "symbol": "skip"
+      },
+      "copies": 2,
+      "points": 20,
+      "abilities": [
+        {
+          "type": "skip",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "blue-reverse",
+      "label": "Reverse",
+      "image": "cards/blue-reverse.png",
+      "attributes": {
+        "color": "blue",
+        "symbol": "reverse"
+      },
+      "copies": 2,
+      "points": 20,
+      "abilities": [
+        {
+          "type": "reverse"
+        }
+      ]
+    },
+    {
+      "id": "blue-draw2",
+      "label": "+2",
+      "image": "cards/blue-draw2.png",
+      "attributes": {
+        "color": "blue",
+        "symbol": "+2"
+      },
+      "copies": 2,
+      "points": 20,
+      "abilities": [
+        {
+          "type": "draw",
+          "target": "next",
+          "count": 2,
+          "losesTurn": true
+        }
+      ]
+    },
+    {
+      "id": "wild",
+      "label": "Wild",
+      "image": "cards/wild.png",
+      "attributes": {
+        "symbol": "wild"
+      },
+      "copies": 4,
+      "wild": true,
+      "points": 50,
+      "abilities": [
+        {
+          "type": "chooseAttribute",
+          "attribute": "color"
+        }
+      ]
+    },
+    {
+      "id": "wild-draw4",
+      "label": "Wild +4",
+      "image": "cards/wild-draw4.png",
+      "attributes": {
+        "symbol": "wild-draw4"
+      },
+      "copies": 4,
+      "wild": true,
+      "points": 50,
+      "abilities": [
+        {
+          "type": "chooseAttribute",
+          "attribute": "color"
+        },
+        {
+          "type": "draw",
+          "target": "next",
+          "count": 4,
+          "losesTurn": true
+        }
+      ]
+    }
+  ]
+}

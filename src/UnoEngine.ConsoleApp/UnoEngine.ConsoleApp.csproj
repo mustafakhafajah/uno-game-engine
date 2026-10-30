@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>uno</AssemblyName>
+    <RootNamespace>UnoEngine.ConsoleApp</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UnoEngine.Engine\UnoEngine.Engine.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\presets\*.json" Link="presets\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
